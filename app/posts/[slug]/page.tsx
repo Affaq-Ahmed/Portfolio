@@ -8,8 +8,8 @@ import { getPostBySlug } from '@/lib/posts';
 import { formatDate } from '@/lib/utils';
 import MDXContent from '@/components/mdx-content';
 
-export default async function Post({ params }: { params: { slug: string } }) {
-  const { slug } = params;
+export default async function Post({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
 
   const post = await getPostBySlug(slug);
 
