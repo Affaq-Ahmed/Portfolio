@@ -2,11 +2,11 @@ import Intro from '@/components/intro';
 import React from 'react';
 
 export default function Home() {
-	return (
-		<section className='py-24'>
-			<div className='container max-w-3xl'>
-				<Intro />
-			</div>
-		</section>
-	);
+  return (
+    <section className='py-24'>
+      <div className='container max-w-3xl'>
+        <Intro />
+      </div>
+    </section>
+  );
 }
