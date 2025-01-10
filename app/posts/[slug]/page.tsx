@@ -6,11 +6,10 @@ import { ArrowLeftIcon } from 'lucide-react';
 import { notFound } from 'next/navigation';
 import { getPostBySlug } from '@/lib/posts';
 import { formatDate } from '@/lib/utils';
-// import { MDXRemote } from 'next-mdx-remote/rsc';
 import MDXContent from '@/components/mdx-content';
 
 export default async function Post({ params }: { params: { slug: string } }) {
-  const { slug } = await params;
+  const { slug } = params;
 
   const post = await getPostBySlug(slug);
 
