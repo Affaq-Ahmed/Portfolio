@@ -4,11 +4,22 @@ import Link from 'next/link';
 
 import { ArrowLeftIcon } from 'lucide-react';
 import { notFound } from 'next/navigation';
-import { getPostBySlug } from '@/lib/posts';
+import { getPostBySlug, getPosts } from '@/lib/posts';
 import { formatDate } from '@/lib/utils';
 import MDXContent from '@/components/mdx-content';
 
-export default async function Post({ params }: { params: Promise<{ slug: string }> }) {
+export async function generateStaticParams() {
+  const posts = await getPosts();
+  const slugs = posts.map((post) => ({ slug: post.slug }));
+
+  return slugs;
+}
+
+export default async function Post({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
   const { slug } = await params;
 
   const post = await getPostBySlug(slug);
