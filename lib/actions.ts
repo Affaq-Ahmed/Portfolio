@@ -23,7 +23,7 @@ export const sendEmail = async (data: ContactFormInputs) => {
       cc: ['affaqahmed165@gmail.com'],
       subject: 'Contact Form Submission',
       text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
-      react: ContactFormEmail({ name, email, message }),
+      react: await ContactFormEmail({ name, email, message }),
     });
 
     if (!data || error) {
