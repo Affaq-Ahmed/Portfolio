@@ -3,8 +3,8 @@
 import React, { useState } from 'react';
 import { Cross2Icon } from '@radix-ui/react-icons';
 
-import { Button } from './ui/button';
-import { Input } from './ui/input';
+import { Button } from '../ui/button';
+import { Input } from '../ui/input';
 
 import Posts from './posts';
 import { PostMetadata } from '@/lib/posts';

@@ -1,6 +1,6 @@
-import Intro from '@/components/intro';
-import RecentPosts from '@/components/recent-posts';
-import RecentProjects from '@/components/recent-projects';
+import Intro from '@/components/landing/intro';
+import RecentPosts from '@/components/posts/recent-posts';
+import RecentProjects from '@/components/projects/recent-projects';
 import React from 'react';
 
 export default function Home() {
