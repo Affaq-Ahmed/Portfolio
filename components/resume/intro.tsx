@@ -33,7 +33,7 @@ export default function ResumeIntro() {
             alt={`Affaq Ahmed's profile picture`}
             width={100}
             height={100}
-            className='-mt-4 h-24 w-24 rounded-full border-8 border-white grayscale hover:border-green-400 sm:-mt-20 sm:h-36 sm:w-36'
+            className='-mt-4 h-24 w-24 rounded-full border-4 sm:border-8 border-white grayscale hover:border-green-400 sm:-mt-20 sm:h-36 sm:w-36'
             priority
           />
         </div>
