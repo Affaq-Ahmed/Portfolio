@@ -1,5 +1,14 @@
 import ContactForm from '@/components/contact/contact-form';
+import { Metadata } from 'next';
 import React from 'react';
+
+export const generateMetadata = (): Metadata => {
+  return {
+    title: `Contact - Affaq Ahmed's Resumé`,
+    description:
+      'This is the contact page of Affaq Ahmed for this portfolio website',
+  };
+};
 
 const Contact = () => {
   return (

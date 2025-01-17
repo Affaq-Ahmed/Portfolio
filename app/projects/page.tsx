@@ -1,6 +1,15 @@
 import Projects from '@/components/projects/projects';
 import { getProjects } from '@/lib/projects';
+import { Metadata } from 'next';
 import React from 'react';
+
+export const generateMetadata = (): Metadata => {
+  return {
+    title: `Projects - Affaq Ahmed's Resumé`,
+    description:
+      'This is the projects page of Affaq Ahmed for this portfolio website',
+  };
+};
 
 export default async function ProjectsPage() {
   const projects = await getProjects();

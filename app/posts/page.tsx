@@ -1,6 +1,15 @@
 import PostsWithSearch from '@/components/posts/posts-with-search';
 import { getPosts } from '@/lib/posts';
+import { Metadata } from 'next';
 import React from 'react';
+
+export const generateMetadata = (): Metadata => {
+  return {
+    title: `Posts - Affaq Ahmed's Resumé`,
+    description:
+      'This is the posts page of Affaq Ahmed for this portfolio website',
+  };
+};
 
 export default async function PostsPage() {
   const posts = await getPosts();

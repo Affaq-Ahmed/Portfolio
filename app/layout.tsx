@@ -13,7 +13,7 @@ const playFair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: 'Affaq Ahmed Portfolio',
+  title: `About - Affaq Ahmed's Resumé`,
   description: 'This is a portfolio website of Affaq Ahmed',
 };
 
