@@ -1,5 +1,5 @@
 import ResumeIntro from '@/components/resume/intro';
-import Separator from '@/components/resume/separator';
+import Separator from '@/components/separator';
 import { Metadata } from 'next';
 import React from 'react';
 
