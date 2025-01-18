@@ -22,11 +22,15 @@ export default function ResumePage() {
 
         <ResumeIntro />
         <Separator />
+
         <PersonalStatement />
         <Separator />
+
         <Education />
         <Separator />
+
         <Experience />
+        <Separator />
       </div>
     </section>
   );

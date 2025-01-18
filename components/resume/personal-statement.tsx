@@ -11,7 +11,7 @@ export default function PersonalStatement() {
         <FaQuoteRight
           aria-hidden='true'
           size={100}
-          className='absolute -top-4 right-0 z-10 text-muted-foreground dark:text-muted'
+          className='absolute -top-4 right-0 -z-10 text-muted-foreground dark:text-muted'
         />
         <h2 className='heading group flex gap-2 uppercase'>
           Personal Statement
@@ -46,7 +46,7 @@ export default function PersonalStatement() {
         <h3 className='text-base font-semibold uppercase text-ring'>
           Objective
         </h3>
-        <p className='py-5 text-sm text-ring'>
+        <p className='pt-5 text-sm text-ring'>
           {
             '"I have a deep passion for both the design and technical aspects of software development. I find great fulfillment in tackling complex challenges and crafting innovative solutions. My long-term goal is to grow into the role of a Software Architect, where I can contribute strategically to designing robust, scalable systems while driving technical excellence."'
           }
