@@ -105,8 +105,12 @@ body {
     @apply font-serif text-3xl font-bold underline decoration-border/75 decoration-2 underline-offset-8;
   }
 
-  .title-name{
-    @apply font-sans text-4xl leading-10 tracking-tight font-bold underline decoration-border/75 decoration-2 underline-offset-8;
+  .title-name {
+    @apply font-sans text-4xl font-bold leading-10 tracking-tight underline decoration-border/75 decoration-2 underline-offset-8;
+  }
+
+  .heading {
+    @apply mb-6 font-sans text-2xl font-bold leading-6 tracking-tight;
   }
 
   .prose pre {
@@ -125,4 +129,24 @@ body {
   .prose code span {
     @apply font-medium;
   }
+}
+
+.group:hover .permalink::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+.permalink::after {
+  content: '#';
+  margin-left: 8px;
+  font-size: 1rem; /* Adjust based on preference */
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.2s,
+    visibility 0.2s;
+}
+
+.permalink {
+  text-decoration: none; /* Remove underline if necessary */
 }

@@ -1,4 +1,7 @@
+import Education from '@/components/resume/education';
+import Experience from '@/components/resume/experience';
 import ResumeIntro from '@/components/resume/intro';
+import PersonalStatement from '@/components/resume/personal-statement';
 import Separator from '@/components/separator';
 import { Metadata } from 'next';
 import React from 'react';
@@ -19,6 +22,11 @@ export default function ResumePage() {
 
         <ResumeIntro />
         <Separator />
+        <PersonalStatement />
+        <Separator />
+        <Education />
+        <Separator />
+        <Experience />
       </div>
     </section>
   );
