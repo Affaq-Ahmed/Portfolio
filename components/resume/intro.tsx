@@ -14,14 +14,14 @@ export default function ResumeIntro() {
 
         <div className='flex w-full justify-between'>
           <div className='flex flex-col gap-1'>
-            <p className='flex items-center gap-2 sm:gap-4 text-xs '>
+            <p className='flex items-center gap-2 sm:gap-4 text-xs sm:text-sm'>
               <FaLocationPin size={16} className='' /> From Sargodha, Pakistan
             </p>
             <p className='flex items-center gap-2 sm:gap-4 text-sm'>
               <FaEnvelope size={16} />{' '}
               <a
                 href='mailto:affaqahmed165@gmail.com'
-                className='text-xs sm:text-base font-medium underline hover:text-muted-foreground'
+                className='text-xs sm:text-sm font-medium underline hover:text-muted-foreground'
               >
                 affaqahmed165@gmail.com
               </a>
