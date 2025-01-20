@@ -13,8 +13,14 @@ const playFair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: `About - Affaq Ahmed's Resumé`,
+  title: {
+    default: `Affaq Ahmed's Resumé`,
+    template: `%s - Affaq Ahmed's Resumé`,
+  },
   description: 'This is a portfolio website of Affaq Ahmed',
+  twitter: {
+    card: 'summary_large_image',
+  },
 };
 
 export default function RootLayout({

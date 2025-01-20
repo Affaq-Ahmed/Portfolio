@@ -5,7 +5,7 @@ import React from 'react';
 
 export const generateMetadata = (): Metadata => {
   return {
-    title: `Posts - Affaq Ahmed's Resumé`,
+    title: `Posts`,
     description:
       'This is the posts page of Affaq Ahmed for this portfolio website',
   };
