@@ -150,3 +150,10 @@ body {
 .permalink {
   text-decoration: none; /* Remove underline if necessary */
 }
+
+.resume-dp {
+  width: 150px;
+  height: 150px;
+  background: url('/images/resume/Affaq_Ahmed_DP_1b.png') no-repeat center center;
+  background-size: cover;
+}
