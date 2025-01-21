@@ -3,6 +3,7 @@ import Experience from '@/components/resume/experience';
 import ResumeIntro from '@/components/resume/intro';
 import PersonalStatement from '@/components/resume/personal-statement';
 import Projects from '@/components/resume/projects';
+import TechStacks from '@/components/resume/tech-stack';
 import Separator from '@/components/separator';
 import { Metadata } from 'next';
 import React from 'react';
@@ -34,6 +35,9 @@ export default function ResumePage() {
         <Separator />
 
         <Projects />
+        <Separator />
+
+        <TechStacks />
         <Separator />
       </div>
     </section>
