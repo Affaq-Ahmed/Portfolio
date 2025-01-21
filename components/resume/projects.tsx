@@ -151,7 +151,128 @@ export default function Projects() {
 
         <small>
           <ul className='list-disc space-y-2 pl-4 leading-5 sm:space-y-4'>
-            <li></li>
+            <li>
+              <strong>My Portfolio</strong> - A responsive portfolio website
+              showcasing my skills and projects. Built using Next.js,
+              TailwindCSS, and ShadCN. (
+              <a
+                href='https://github.com/Affaq-Ahmed/Portfolio'
+                target='_blank'
+                className='font-medium underline'
+              >
+                Github
+              </a>{' '}
+              |{' '}
+              <a
+                href='https://affaqahmed.vercel.app/'
+                className='font-medium underline'
+              >
+                Website
+              </a>
+              )
+            </li>
+            <li>
+              <strong>Serpent Cases</strong> - An E-Commerce platform offering a
+              seamless shopping experience. Built using Next.js, ShadCN, and
+              TailwindCSS. (
+              <a
+                href='https://github.com/Affaq-Ahmed/Serpent-Cases'
+                target='_blank'
+                className='font-medium underline'
+              >
+                Github
+              </a>
+              {/* {' '}
+              |{' '}
+              <a
+                href='https://affaqahmed.vercel.app/'
+                className='font-medium underline'
+              >
+                Website
+              </a> */}
+              )
+            </li>
+            <li>
+              <strong>Budget Buddy</strong> - A user-friendly expense tracker to
+              help manage finances efficiently. Built using React, Material UI,
+              Context API, and Local Storage. (
+              <a
+                href='https://github.com/Affaq-Ahmed/Budget-Buddy'
+                target='_blank'
+                className='font-medium underline'
+              >
+                Github
+              </a>{' '}
+              |{' '}
+              <a
+                href='https://app.netlify.com/sites/affaq-budget-buddy/'
+                className='font-medium underline'
+              >
+                Website
+              </a>
+              )
+            </li>
+            <li>
+              <strong>CognoFlow</strong> - A visually appealing UI/UX
+              implementation transformed from Figma. Built using ReactJS and
+              advanced CSS. (
+              <a
+                href='https://github.com/Affaq-Ahmed/CongnoFlow-GPT-UI-UX'
+                target='_blank'
+                className='font-medium underline'
+              >
+                Github
+              </a>{' '}
+              |{' '}
+              <a
+                href='https://cognoflow.netlify.app/'
+                className='font-medium underline'
+              >
+                Website
+              </a>
+              )
+            </li>
+            <li>
+              <strong>Web Chat Vision</strong> - A robust video chat application
+              for seamless real-time communication. Built using ReactJs and
+              WebRTC technology. (
+              <a
+                href='https://github.com/Affaq-Ahmed/Web-Chat-Vision'
+                target='_blank'
+                className='font-medium underline'
+              >
+                Github
+              </a>
+              {/* {' '}
+              |{' '}
+              <a
+                href='https://affaqahmed.vercel.app/'
+                className='font-medium underline'
+              >
+                Website
+              </a> */}
+              )
+            </li>
+            <li>
+              <strong>Alan AI News Reader</strong> - A news reader application
+              with natural language voice commands. Built using React,
+              Material-UI (MUI), and Alan AI. (
+              <a
+                href='https://github.com/Affaq-Ahmed/Alan-AI-News-Reader'
+                target='_blank'
+                className='font-medium underline'
+              >
+                Github
+              </a>{' '}
+              |{' '}
+              <a
+                href='https://app.netlify.com/sites/affaq-newsreader/overview'
+                className='font-medium underline'
+              >
+                Website
+              </a>
+              )
+            </li>
           </ul>
         </small>
       </div>
