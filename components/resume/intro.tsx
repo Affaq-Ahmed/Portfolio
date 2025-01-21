@@ -28,7 +28,7 @@ export default function ResumeIntro() {
           </div>
 
           <div
-            className={`-mt-20 h-[100px] w-[100px] bg-[url('/images/resume/Affaq_Ahmed_DP_1w.png')] bg-cover bg-no-repeat hover:bg-[url('/images/resume/Affaq_Ahmed_DP_2w.png')] dark:bg-[url('/images/resume/Affaq_Ahmed_DP_1b.png')] dark:hover:bg-[url('/images/resume/Affaq_Ahmed_DP_2b.png')] sm:-mt-2.5 sm:h-[150px] sm:w-[150px]`}
+            className={`-mt-20 h-[100px] w-[100px] bg-[url('/images/resume/Affaq_Ahmed_DP_1w.png')] bg-cover bg-no-repeat transition duration-1000 ease-in-out hover:bg-[url('/images/resume/Affaq_Ahmed_DP_2w.png')] dark:bg-[url('/images/resume/Affaq_Ahmed_DP_1b.png')] dark:hover:bg-[url('/images/resume/Affaq_Ahmed_DP_2b.png')] sm:-mt-2.5 sm:h-[150px] sm:w-[150px]`}
           ></div>
         </div>
       </div>
