@@ -13,13 +13,47 @@ const playFair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://affaqahmed.com'),
   title: {
     default: `Affaq Ahmed's Resumé`,
     template: `%s - Affaq Ahmed's Resumé`,
   },
-  description: 'This is a portfolio website of Affaq Ahmed',
+  description:
+    'Portfolio and résumé website of Affaq Ahmed — showcasing skills, projects, and experience in modern web and AI engineering.',
+  keywords: [
+    'Affaq Ahmed',
+    'Affaq Ahmed portfolio',
+    'Affaq Ahmed resume',
+    'AI Engineer',
+    'MERN Stack Developer',
+    'Next.js Developer',
+  ],
+  openGraph: {
+    type: 'website',
+    url: 'https://affaqahmed.com',
+    title: "Affaq Ahmed's Résumé",
+    description:
+      'Portfolio and résumé website of Affaq Ahmed — showcasing skills, projects, and experience in modern web and AI engineering.',
+    siteName: 'Affaq Ahmed',
+    images: [
+      {
+        url: '/og-image.png', // Add a preview image for social sharing
+        width: 1200,
+        height: 630,
+        alt: "Affaq Ahmed's Portfolio",
+      },
+    ],
+  },
   twitter: {
     card: 'summary_large_image',
+    title: "Affaq Ahmed's Résumé",
+    description:
+      'Portfolio and résumé website of Affaq Ahmed — showcasing skills, projects, and experience in modern web and AI engineering.',
+    images: ['/og-image.png'],
+    creator: '@affaqahmed', // optional
+  },
+  alternates: {
+    canonical: 'https://affaqahmed.com',
   },
 };
 
