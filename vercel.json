@@ -1,8 +1,14 @@
 {
   "redirects": [
     {
-      "source": "https://www.affaqahmed.com/(.*)",
-      "destination": "https://affaqahmed.com/$1",
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.affaqahmed.com"
+        }
+      ],
+      "destination": "https://affaqahmed.com/:1",
       "permanent": true
     }
   ]
