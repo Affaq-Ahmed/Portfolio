@@ -15,46 +15,63 @@ const playFair = Playfair_Display({
 export const metadata: Metadata = {
   metadataBase: new URL('https://affaqahmed.com'),
   title: {
-    default: `Affaq Ahmed's Resumé`,
-    template: `%s - Affaq Ahmed's Resumé`,
+    default: 'Affaq Ahmed — Full Stack Developer',
+    template: '%s | Affaq Ahmed',
   },
   description:
-    'Portfolio and résumé website of Affaq Ahmed — showcasing skills, projects, and experience in modern web and AI engineering.',
+    'Affaq Ahmed — Full Stack Developer specializing in modern web applications, AI integration, and scalable backend systems. Explore portfolio, skills, and resume.',
   keywords: [
     'Affaq Ahmed',
-    'Affaq Ahmed portfolio',
-    'Affaq Ahmed resume',
+    'Full Stack Developer',
+    'MERN Stack',
     'AI Engineer',
-    'MERN Stack Developer',
-    'Next.js Developer',
+    'Software Engineer',
+    'Portfolio',
   ],
+  authors: [{ name: 'Affaq Ahmed', url: 'https://affaqahmed.com' }],
+  creator: 'Affaq Ahmed',
+  publisher: 'Affaq Ahmed',
+  alternates: {
+    canonical: 'https://affaqahmed.com',
+  },
   openGraph: {
-    type: 'website',
-    url: 'https://affaqahmed.com',
-    title: "Affaq Ahmed's Résumé",
+    title: 'Affaq Ahmed — Full Stack Developer',
     description:
-      'Portfolio and résumé website of Affaq Ahmed — showcasing skills, projects, and experience in modern web and AI engineering.',
+      'Building performant web applications with modern technologies. Explore projects, experience, and resume.',
+    url: 'https://affaqahmed.com',
     siteName: 'Affaq Ahmed',
+    locale: 'en_US',
+    type: 'website',
     images: [
       {
-        url: '/og-image.png', // Add a preview image for social sharing
+        url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: "Affaq Ahmed's Portfolio",
+        alt: 'Affaq Ahmed — Full Stack Developer',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Affaq Ahmed's Résumé",
+    title: 'Affaq Ahmed — Full Stack Developer',
     description:
-      'Portfolio and résumé website of Affaq Ahmed — showcasing skills, projects, and experience in modern web and AI engineering.',
+      'Explore portfolio and resume of Affaq Ahmed, Full Stack Developer and AI Engineer.',
+    creator: '@affaqahmed',
     images: ['/og-image.png'],
-    creator: '@affaqahmed', // optional
   },
-  alternates: {
-    canonical: 'https://affaqahmed.com',
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-snippet': -1,
+      'max-image-preview': 'large',
+      'max-video-preview': -1,
+    },
   },
+  manifest: '/manifest.json',
+  category: 'technology',
 };
 
 export default function RootLayout({
