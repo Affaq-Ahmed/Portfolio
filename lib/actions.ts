@@ -3,7 +3,6 @@
 import { z } from 'zod';
 import { ContactFormSchema } from './schemas';
 import nodemailer from 'nodemailer';
-import ContactFormEmail from '@/emails/contact-form-email';
 
 type ContactFormInputs = z.infer<typeof ContactFormSchema>;
 
