@@ -81,6 +81,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en' suppressHydrationWarning>
+      <head>
+        {/* Identity / rel="me" links for profile verification */}
+        <link rel='me' href='https://github.com/Affaq-Ahmed' />
+        <link rel='me' href='https://linkedin.com/in/affaq-ahmed' />
+        <link rel='me' href='https://instagram.com/affaqahmedawann' />
+        <link rel='me' href='https://facebook.com/affaqahmedawann' />
+        <link rel='me' href='mailto:affaqahmed165@gmail.com' />
+      </head>
       <body
         className={cn(
           `flex min-h-screen flex-col font-sans antialiased`,
