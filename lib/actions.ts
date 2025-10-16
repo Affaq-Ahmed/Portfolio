@@ -17,7 +17,7 @@ export const sendEmail = async (data: ContactFormInputs) => {
 
   try {
     const { name, email, message } = result.data;
-    const { data, error } = await resend.emails.send({
+    await resend.emails.send({
       from: 'affaqahmed165@gmail.com',
       to: [email],
       cc: ['affaqahmed165@gmail.com'],
@@ -26,11 +26,9 @@ export const sendEmail = async (data: ContactFormInputs) => {
       react: await ContactFormEmail({ name, email, message }),
     });
 
-    if (!data || error) {
-      throw new Error('Email not sent');
-    }
+    return { success: true };
   } catch (error) {
-    console.log(error)
+    console.log(error);
     return { error };
   }
 };
