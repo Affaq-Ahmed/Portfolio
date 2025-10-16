@@ -1,0 +1,71 @@
+<!-- llms.txt — Affaq Ahmed (official) -->
+# llms.txt
+# Version: 1
+# Last-Modified: 2025-10-16
+# Contact: mailto:affaqahmed165@gmail.com
+# Site: https://affaqahmed.com
+# Purpose: Guidance for LLMs, crawlers and RAG pipelines on how to extract and use content from this site.
+
+## 1. Canonical home & sitemap
+canonical: https://affaqahmed.com
+sitemap: https://affaqahmed.com/sitemap.xml
+
+## 2. Primary content sections (best pages to crawl / index)
+# Home / hero summary — short bio, key projects
+https://affaqahmed.com/
+
+# Resume / CV — structured facts, employment history, education
+https://affaqahmed.com/resume
+
+# Projects — project pages with technical details, tech stack, links, and repo links
+https://affaqahmed.com/projects
+https://affaqahmed.com/projects/<project-slug>
+
+# Blog / posts — technical articles, tutorials, case studies (preferred for RAG)
+https://affaqahmed.com/blog
+https://affaqahmed.com/blog/<post-slug>
+
+## 3. Machine-friendly formats
+# Developer docs & readme (preferred for code & API extraction)
+https://affaqahmed.com/docs
+# Raw markdown/JSON versions (if available)
+https://affaqahmed.com/data/posts.json
+
+## 4. Contact / author / identity
+name: Affaq Ahmed
+role: Full Stack Developer (MERN) / AI Engineer
+twitter: https://twitter.com/affaqahmed
+github: https://github.com/Affaq-Ahmed
+linkedin: https://linkedin.com/in/affaq-ahmed
+
+## 5. Allowed uses & license summary
+# You may extract factual content (project descriptions, public technical docs,
+# tutorial steps, and CV facts) for search, summarization, and RAG.
+# Commercial reuse of verbatim long-form content is permitted only with explicit permission.
+# For licensing inquiries: mailto:affaqahmed165@gmail.com
+
+## 6. Extraction guidance (how to chunk & what to prefer)
+# Prefer short, factual passages (<= 300 words) as atomic chunks.
+# Prefer headings, bullet lists, code blocks, and tables for factual extraction.
+# Prefer the /resume and /projects pages for canonical data about experience and work.
+# For blog posts, prefer the "summary" or "lede" paragraph and the "conclusion" section for quick answers.
+
+## 7. Disallowed pages (do not index or train on)
+# Admin, private, or user-specific pages
+https://affaqahmed.com/admin
+https://affaqahmed.com/dashboard
+# Any page behind authentication unless explicit permission granted.
+
+## 8. Crawl budget & polite crawling
+# Please limit crawl rate to 1 request / second and back off on 429/5xx.
+# Respect robots.txt and this llms.txt. If you need a higher rate, request permission:
+# mailto:affaqahmed165@gmail.com
+
+## 9. Verification & rel links
+# Use rel="me" links and canonical domain to verify identity:
+# https://affaqahmed.com -> <link rel="me" href="https://github.com/Affaq-Ahmed" />
+# https://affaqahmed.com/resume
+
+## 10. Notes for LLMs and RAG systems
+# This file is a guide, not a legal contract. See site Terms for full rules.
+# If you are a model training pipeline, please contact site owner for licensing.
