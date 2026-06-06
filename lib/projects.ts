@@ -15,6 +15,18 @@ export type ProjectMetadata = {
   image?: string;
   author?: string;
   publishedAt?: string;
+  // Recruiter / SEO oriented fields — all optional so projects degrade
+  // gracefully when a live demo, repo, or metrics aren't available.
+  role?: string;
+  stack?: string[];
+  liveUrl?: string;
+  githubUrl?: string;
+  featured?: boolean;
+  category?: string;
+  // Context of the work: 'Professional' | 'Client' | 'Personal' | 'Open Source'
+  type?: string;
+  // Company/agency the work was done at (for professional/client projects)
+  company?: string;
   slug: string;
 };
 
@@ -36,6 +48,10 @@ export async function getProjects(limit?: number): Promise<ProjectMetadata[]> {
   const projects = files
     .map((file) => getProjectMetadata(file))
     .sort((a, b) => {
+      // Featured projects float to the top, then most-recent first.
+      if (Boolean(a.featured) !== Boolean(b.featured)) {
+        return a.featured ? -1 : 1;
+      }
       if (new Date(a.publishedAt ?? '') < new Date(b.publishedAt ?? '')) {
         return 1;
       } else {

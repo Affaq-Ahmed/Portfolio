@@ -164,7 +164,7 @@ export default function Projects() {
               </a>{' '}
               |{' '}
               <a
-                href='https://affaqahmed.vercel.app/'
+                href='https://affaqahmed.com/'
                 className='font-medium underline'
               >
                 Website
@@ -182,14 +182,6 @@ export default function Projects() {
               >
                 Github
               </a>
-              {/* {' '}
-              |{' '}
-              <a
-                href='https://affaqahmed.vercel.app/'
-                className='font-medium underline'
-              >
-                Website
-              </a> */}
               )
             </li>
             <li>
@@ -243,14 +235,6 @@ export default function Projects() {
               >
                 Github
               </a>
-              {/* {' '}
-              |{' '}
-              <a
-                href='https://affaqahmed.vercel.app/'
-                className='font-medium underline'
-              >
-                Website
-              </a> */}
               )
             </li>
             <li>

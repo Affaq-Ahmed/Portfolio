@@ -29,13 +29,30 @@ export default function Projects({
             <div className='absolute inset-[1px] rounded-lg bg-background/70 opacity-0 transition-opacity duration-500 group-hover:opacity-100' />
 
             <div className='absolute inset-x-0 bottom-0 translate-y-2 px-6 py-5 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100'>
+              {project.type && (
+                <span className='mb-1 inline-block text-[10px] font-medium uppercase tracking-wide text-muted-foreground'>
+                  {project.type}
+                </span>
+              )}
               <h2 className='title line-clamp-1 text-xl no-underline'>
                 {project.title}
               </h2>
               <p className='line-clamp-1 text-sm text-muted-foreground'>
                 {project.summary}
               </p>
-              <p className='text-xs font-light text-muted-foreground'>
+              {project.stack && project.stack.length > 0 && (
+                <ul className='mt-2 flex flex-wrap gap-1.5'>
+                  {project.stack.slice(0, 4).map((tech) => (
+                    <li
+                      key={tech}
+                      className='rounded-full border border-border px-2 py-0.5 text-[10px] text-muted-foreground'
+                    >
+                      {tech}
+                    </li>
+                  ))}
+                </ul>
+              )}
+              <p className='mt-2 text-xs font-light text-muted-foreground'>
                 {formatDate(project.publishedAt ?? '')}
               </p>
             </div>
