@@ -1,0 +1,60 @@
+---
+title: Health OCR
+summary: A Python desktop OCR application where I automated a 1-hour manual build down to under 15 minutes and replaced a manual log pipeline with AWS Lambda + S3.
+image: '/images/projects/health-ocr.png'
+author: 'Affaq Ahmed'
+publishedAt: '2023-06-15'
+role: 'Software Engineer'
+type: 'Professional'
+company: 'Tintash'
+category: 'Desktop App'
+stack:
+  ['Python', 'AWS Lambda', 'Amazon S3', 'Batch Scripting', 'Cron', 'CI/CD']
+featured: false
+---
+
+## Overview
+
+Health OCR is a Python desktop application that performs optical character
+recognition (OCR) within a health-based system, turning documents into
+machine-readable text. My work on the project focused on **automating the
+delivery pipeline and operations** around it — removing slow, error-prone manual
+steps so the team could ship and operate the app reliably.
+
+## My Role & Contributions
+
+**1. Automated the build process.** Producing a build of the application was a
+multi-step manual process that took around an hour and required a person to babysit
+it the whole way through. I wrote a **batch script that automated the entire
+build end to end** — no human input required at any step.
+
+**2. Automated the logging pipeline.** Application logs were being handled
+manually. I built an automated pipeline that **stores logs on Amazon S3 and
+combines/processes them with AWS Lambda on a scheduled (cron) basis**, replacing
+the previous manual workflow entirely.
+
+## Impact
+
+- **Build time cut from ~60 minutes to under 15 minutes** — roughly a 4× speed-up.
+- **Fully hands-off** — the build went from constant human supervision to zero
+  manual input.
+- **Thousands of hours of manual labour saved** over the life of the project by
+  removing repetitive build and log-handling work.
+- **More reliable operations** — automation eliminated the human errors that crept
+  into the manual build and logging steps.
+
+## Tech Stack & Architecture
+
+- **Application:** Python desktop app performing OCR.
+- **Build automation:** A batch script orchestrating the full multi-step build.
+- **Log pipeline:** Logs shipped to Amazon S3, then aggregated and processed by
+  AWS Lambda functions triggered on a cron schedule.
+
+## Challenges & Solutions
+
+The build had several interdependent steps that previously had to be run in the
+right order by hand — easy to get wrong and slow to complete. I encoded the
+entire sequence into a single batch script so it runs deterministically and
+unattended. For the logs, moving from manual handling to an **S3 + Lambda + cron**
+pipeline meant the data was collected and processed consistently on a schedule,
+without anyone needing to remember to do it.
