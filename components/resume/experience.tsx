@@ -24,11 +24,84 @@ export default function Experience() {
 
       <div className='flex flex-col space-y-4 sm:space-y-5'>
         <p>
+          <strong>Senior Software Engineer</strong>
+          <br />
+          DevCache
+          <br />
+          <small>September 2025 - Present</small>
+          &nbsp; | &nbsp;
+          <small>Lahore, Pakistan (On-site)</small>
+        </p>
+
+        <small>
+          <ul className='my-1 list-disc space-y-2 pl-4 sm:pl-6'>
+            <li>
+              Lead a team of 5 engineers, owning architecture decisions, code
+              reviews, and delivery quality across concurrent clients.
+            </li>
+            <li>
+              Drive end-to-end project execution from technical discovery and
+              architecture to deployment.
+            </li>
+            <li>
+              Partner on client interviews and technical discussions, converting
+              leads into paid engagements, contributing to $10K+ in monthly
+              project revenue (~30% increase in overall company revenue).
+            </li>
+            <li>
+              Designed and implemented scalable backend systems using Node.js,
+              TypeScript, and modular architectures.
+            </li>
+            <li>
+              Built AI-powered backend systems, including RAG pipelines and
+              multi-provider LLM integrations (OpenAI, OpenRouter).
+            </li>
+            <li>
+              Delivered AI products end to end — RAG with vector search and
+              embeddings, OCR ingestion, and real-time voice (Deepgram,
+              ElevenLabs) — across multiple client platforms.
+            </li>
+            <li>
+              Built real-time systems including a Slack-style chat, multi-device
+              sync, and Google-Docs-style collaborative editing using Socket.io,
+              WebSockets, and Y.js.
+            </li>
+            <li>
+              Integrated payments across providers — Stripe (including escrow
+              with commission splits), PayPal, and VIVA Wallet — for SaaS and
+              marketplace products.
+            </li>
+            <li>
+              Architected and led delivery of a cross-platform music-streaming
+              platform (web and mobile), standing up AWS infrastructure, CI/CD,
+              and audio-streaming services.
+            </li>
+            <li>
+              Engineered scalable video-processing pipelines with distributed
+              rendering and queue management (FFmpeg, Remotion, BullMQ).
+            </li>
+            <li>
+              Mentored engineers and established code-review standards and
+              delivery processes across the team.
+            </li>
+          </ul>
+
+          <p className='my-4'>
+            <strong>Languages</strong>: JavaScript/TypeScript, Ruby <br />
+            <strong>Frameworks/Tools</strong>: Node.js, Next.js, NestJS,
+            React.js, React Native, Supabase, PostgreSQL, MongoDB, Redis, AWS,
+            Docker, Stripe, Socket.io, OpenAI, Claude
+          </p>
+        </small>
+      </div>
+
+      <div className='flex flex-col space-y-4 sm:space-y-5'>
+        <p>
           <strong>Full Stack Developer</strong>
           <br />
           ZySoftec
           <br />
-          <small>May 2024 - present</small>
+          <small>May 2024 - August 2025</small>
           &nbsp; | &nbsp;
           <small>Islamabad Pakistan (Remote)</small>
         </p>
