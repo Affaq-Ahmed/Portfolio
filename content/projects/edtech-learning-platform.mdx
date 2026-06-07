@@ -1,0 +1,92 @@
+---
+title: EdTech Learning Platform
+summary: A real-time, multi-device LMS where admins create courses, teachers run live classes, and students answer quizzes in sync across TV, tablet, and mobile.
+image: '/images/projects/edtech-learning-platform.png'
+author: 'Affaq Ahmed'
+publishedAt: '2025-06-01'
+role: 'Backend Engineer'
+type: 'Professional'
+company: 'ZySoftec'
+category: 'Cross-Platform'
+stack:
+  [
+    'Node.js',
+    'MongoDB',
+    'Socket.IO',
+    'Stripe',
+    'Twilio',
+    'React',
+    'React Native',
+  ]
+featured: true
+---
+
+> The client and product name are withheld under NDA. This page describes the
+> system and my contributions without identifying details.
+
+## Overview
+
+An intuitive, real-time learning platform (LMS) built for the Indian community.
+Admins create courses through an admin portal, teachers run live classes, and
+students answer quizzes in real time — all kept in sync across **three React
+Native apps** (TV, tablet, and mobile) by a WebSocket backend. On top of the
+live classroom, it offers a full set of LMS features: live leaderboards,
+attendance, and more.
+
+## My Role & Contributions
+
+I joined to **build the MVP and then carry it through to the full product**,
+working over roughly six months. My focus was the backend and the admin side:
+
+- **Backend ownership** — built and maintained the platform's backend on
+  **Node.js + MongoDB**.
+- **Admin portal** — developed the admin side where courses and content are
+  created and managed.
+- **Real-time engine** — implemented the **Socket.IO** layer that coordinates
+  the TV and mobile apps, powering live quizzes, leaderboards, and class flow.
+- **Integrations** — integrated **Stripe** for payments and **Twilio** for
+  SMS / communications.
+
+## Key Features
+
+- **Admin-managed courses** — admins create and manage courses from the portal.
+- **Live, teacher-led classes** — a dedicated teacher flow for running sessions.
+- **Real-time quizzes** — students answer quizzes live from the mobile flow,
+  with results synced instantly.
+- **TV ↔ mobile coordination** — the classroom TV and student mobiles stay in
+  sync over WebSockets.
+- **Live leaderboard** — real-time student rankings during class.
+- **Attendance & LMS features** — attendance tracking plus the wider LMS
+  feature set.
+
+## Tech Stack & Architecture
+
+- **Backend:** Node.js with MongoDB.
+- **Real-time:** Socket.IO, coordinating shared state between the TV and mobile
+  apps.
+- **Clients:** three React Native apps — one each for TV, tablet, and mobile —
+  plus a React-based admin/web side.
+- **Payments:** Stripe.
+- **Communications:** Twilio.
+
+The core flow ties everything together: an admin creates courses, a teacher
+teaches them through the teacher flow, and students answer quizzes through the
+mobile flow — with the TV and mobile experiences kept in lockstep by the
+WebSocket backend.
+
+## Challenges & Solutions
+
+- **Cross-device real-time sync** — the hardest part was keeping the TV and
+  mobile apps perfectly in sync (quiz state, timing, leaderboard). I built this
+  on a Socket.IO event model so every connected device reflects the same live
+  state.
+- **MVP to product** — I shipped a working MVP first, then evolved it into the
+  full product, growing the backend and admin tooling as features expanded.
+- **Multiple client platforms** — one backend had to serve three distinct React
+  Native apps (TV, tablet, mobile) plus the admin web side from a shared API and
+  socket layer.
+
+## Timeline
+
+Built from November 2024 through mid-2025 — roughly six months from MVP to
+product.
