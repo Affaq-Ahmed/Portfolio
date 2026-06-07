@@ -1,0 +1,74 @@
+---
+title: Neumandate.de
+summary: A German SaaS that helps tax consultants digitally onboard clients and collect their tax details through guided workflows, automated PDFs, and subscription billing.
+image: '/images/projects/neumandate.png'
+author: 'Affaq Ahmed'
+publishedAt: '2024-06-01'
+role: 'Full Stack Developer'
+type: 'Professional'
+company: 'ZySoftec'
+category: 'Web App'
+stack:
+  ['Next.js', 'React', 'Node.js', 'Express', 'MongoDB', 'Stripe', 'Puppeteer']
+featured: true
+---
+
+## Overview
+
+Neumandate.de is a German-language SaaS built for **tax consultants
+(Steuerberater)**. It digitises and automates the client-acquisition process —
+"digitale Mandatsgewinnung" — letting consultants onboard new clients and
+collect the tax details they need through clean, guided workflows. The product
+spans onboarding flows, automated document generation, and subscription billing.
+
+## My Role & Contributions
+
+Neumandate.de was my **first project at ZySoftec**, where I worked as a full
+stack developer across the database, backend, and frontend:
+
+- **Database migration** — migrated the application's data layer from **Firebase
+  to MongoDB**, restructuring the data model in the process.
+- **PDF generation & email** — built automated **PDF creation with Puppeteer**
+  and wired up delivery so generated documents are sent to clients by email.
+- **Subscription billing** — implemented **Stripe** with **multi-plan,
+  subscription-based** pricing.
+- **Onboarding workflows** — developed the guided flows that walk clients
+  through providing their tax information.
+- **UI stabilisation & responsiveness** — hardened the interface and made it
+  responsive across screen sizes.
+
+## Key Features
+
+- **Guided client onboarding** — step-by-step workflows for collecting tax
+  details.
+- **Automated PDFs by email** — documents generated with Puppeteer and delivered
+  automatically.
+- **Multi-plan subscriptions** — tiered, subscription-based billing via Stripe.
+- **Consultant dashboard** — overview of offers and activity for the consultant.
+- **German-localised** — built end to end for a German-speaking audience.
+
+## Tech Stack & Architecture
+
+- **Frontend:** Next.js and React.
+- **Backend:** Node.js / Express on a MERN-style architecture.
+- **Database:** MongoDB (migrated from an earlier Firebase setup).
+- **Documents:** Puppeteer for server-side PDF generation, delivered by email.
+- **Payments:** Stripe for multi-plan subscriptions.
+
+## Challenges & Solutions
+
+- **Moving off Firebase** — migrating to MongoDB meant re-modelling data that
+  had been shaped around Firebase and moving it across without breaking existing
+  functionality.
+- **Reliable document generation** — generating PDFs with Puppeteer and
+  delivering them by email needed to be consistent and repeatable as part of the
+  onboarding flow.
+- **Flexible billing** — supporting multiple subscription plans through Stripe
+  required handling several pricing tiers cleanly.
+
+## Links
+
+There's no public link to the live product (I've since left the company and
+don't know its current state), but a
+[prelaunch landing page](https://prelaunch-neumandate-zysoftec.vercel.app/)
+gives a feel for the product.
