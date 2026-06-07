@@ -1,0 +1,72 @@
+---
+title: Alliesia
+summary: A voice-first AI project-management platform (a faster ClickUp/Monday alternative) where I built three core modules — a Slack-like real-time chat, role-based permissions, and the Stripe payments and feature-gating system.
+image: '/images/projects/alliesia.png'
+author: 'Affaq Ahmed'
+publishedAt: '2025-08-31'
+role: 'Full Stack Developer'
+type: 'Professional'
+company: 'ZySoftec'
+category: 'Web App'
+stack:
+  ['Node.js', 'MongoDB', 'Socket.IO', 'Stripe', 'Next.js', 'Tailwind CSS']
+liveUrl: 'https://alliesia.com/'
+featured: false
+---
+
+## Overview
+
+Alliesia is a **voice-first AI project-management and client platform** —
+positioned as a faster alternative to ClickUp and Monday — that turns voice and
+client conversations into organized, automated execution. It was the company's
+own product, and I built **three of its core modules**: real-time chat,
+role-based permissions, and payments.
+
+## My Role & Contributions
+
+- **Slack-like chat (Socket.IO)** — built the entire chat module: **channels,
+  DMs, private channels, and secret channels**. I also connected **channels to
+  task boards** and **interlinked task messages**, so conversations tie directly
+  into the work they're about.
+- **Role permissions** — implemented the permission system for the product's
+  different roles — **Owner, Manager, Employee, Admin**, and more — with access
+  scoped correctly per role.
+- **Payments (Stripe)** — built the full payment module: **subscription plans,
+  add-ons, and feature gating**, so what a workspace can access is tied to its
+  plan.
+
+## Key Features
+
+- **Real-time chat** — channels, direct messages, and private & secret channels.
+- **Chat ↔ work linking** — channels connected to task boards, with task
+  messages interlinked.
+- **Role-based permissions** — Owner / Manager / Employee / Admin and more.
+- **Subscription plans & add-ons** — flexible billing through Stripe.
+- **Feature gating** — access gated by plan and add-ons.
+
+## Tech Stack & Architecture
+
+- **Backend:** Node.js with MongoDB.
+- **Real-time:** Socket.IO, powering the chat module.
+- **Payments:** Stripe — plans, add-ons, and feature gating.
+- **Web:** Next.js with Tailwind CSS.
+
+## Challenges & Solutions
+
+- **A full Slack-like chat** — building channels, DMs, and private/secret
+  channels on Socket.IO is involved on its own; the harder, more valuable part
+  was **wiring chat into the rest of the product** — linking channels to task
+  boards and interlinking task messages so conversations stay connected to the
+  work.
+- **Scoped permissions** — modelling several roles (Owner, Manager, Employee,
+  Admin, …) so each one sees and does exactly what it should.
+- **Plan-based feature gating** — tying Stripe plans and add-ons to feature
+  access cleanly, so billing and capabilities stay in sync.
+
+## Timeline
+
+May 2025 – August 2025 · 4 months
+
+## Links
+
+Live at [alliesia.com](https://alliesia.com/).
