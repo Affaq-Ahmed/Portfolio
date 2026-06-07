@@ -1,0 +1,85 @@
+---
+title: Kutsbee
+summary: A two-sided SaaS marketplace connecting clients with salons, spas, and barbers — with location/availability search, escrow Stripe payments, and a complex specialist-scheduling engine.
+image: '/images/projects/kutsbee.png'
+author: 'Affaq Ahmed'
+publishedAt: '2025-07-31'
+role: 'Full Stack Developer'
+type: 'Professional'
+company: 'ZySoftec'
+category: 'Web App'
+stack:
+  [
+    'Node.js',
+    'MongoDB',
+    'Next.js',
+    'Stripe',
+    'Google Maps API',
+    'Google OAuth',
+    'Tailwind CSS',
+  ]
+featured: false
+---
+
+## Overview
+
+Kutsbee is a **two-sided SaaS marketplace** that connects people looking for
+**salons, spas, and barbers** with the businesses that offer those services.
+Businesses register and set their location, list their specialists, available
+hours, and pricing; end users search by **location, specialist availability, and
+hours**, then book — with everything tracked on the platform.
+
+## My Role & Contributions
+
+I was responsible for the **backend and the web side**, and also provided the
+**APIs the mobile apps consumed**. The standout pieces of work were mine:
+
+- **Specialist availability engine** — wrote a complex API that computes a
+  specialist's availability, working hours, and bookable slots. It was the most
+  complex part of the platform and took 3–4 days to get right, alongside the
+  order-creation flow.
+- **Escrow payments (Stripe)** — implemented escrow-based payments: businesses
+  subscribe to the platform and users pay for services, with Kutsbee taking a
+  **per-order cut from both sides** and paying the remainder out to the salon.
+- **Location search** — built Google Maps-based locations with **MongoDB
+  geospatial indexes** so users can search efficiently by proximity.
+- **Auth & access** — integrated **Google OAuth** and implemented **RBAC** on
+  the admin side.
+- **Architecture** — designed a fully **modular backend** structure.
+- **Web** — built the Next.js web apps using Tailwind CSS.
+
+## Key Features
+
+- **Two-sided marketplace** — businesses and clients on one platform.
+- **Business profiles** — location, specialists, available hours, and pricing.
+- **Location & availability search** — find specialists by proximity and open
+  slots.
+- **Booking & order creation** — reserve services through the platform.
+- **Escrow payments** — Stripe payments with a platform commission split.
+- **Subscriptions** — businesses subscribe to be listed.
+- **Admin with RBAC** and **Google OAuth** sign-in.
+
+## Tech Stack & Architecture
+
+- **Backend:** Node.js with MongoDB, built on a modular structure.
+- **Web:** Next.js with Tailwind CSS.
+- **Mobile:** React Native apps that consume the APIs I built.
+- **Payments:** Stripe — escrow, per-order commission split, and subscriptions.
+- **Location:** Google Maps with MongoDB geospatial indexes.
+- **Auth:** Google OAuth plus role-based access control.
+
+## Challenges & Solutions
+
+- **The availability engine** — the hardest problem was computing real-time
+  specialist availability across working hours, slot durations, and existing
+  bookings. I built a dedicated API to resolve all of that into clean, bookable
+  slots; it was the most complex piece of the system.
+- **Escrow with a commission split** — money flowed from both businesses and
+  users, so the payment logic had to take Kutsbee's per-order cut and pay the
+  remainder to the salon, all handled through Stripe.
+- **Geospatial search at scale** — indexing locations in MongoDB so proximity
+  search stays fast as listings grow.
+
+## Timeline
+
+June 2025 – July 2025 · 2 months
