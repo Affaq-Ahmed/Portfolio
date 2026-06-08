@@ -4,11 +4,11 @@ import React from 'react';
 export default function ResumeIntro() {
   return (
     <section className='flex w-full flex-col items-start gap-y-6 sm:gap-y-10'>
-      <h1 className='title-name no-underline'>Affaq Ahmed</h1>
+      <h2 className='title-name no-underline'>Affaq Ahmed</h2>
 
       <div className='flex w-full flex-col gap-y-4'>
         <h5 className='text-sm font-semibold sm:text-base'>
-          Full Stack Web Developer & Designer
+          Senior Software Engineer — Full-Stack & AI
         </h5>
 
         <div className='flex w-full justify-between'>

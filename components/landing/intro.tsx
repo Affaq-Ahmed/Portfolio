@@ -8,18 +8,19 @@ const Intro = () => {
       <div className='mt-2 flex-1 md:mt-0'>
         <h1 className='title no-underline'>Hey, I&#39;m Affaq.</h1>
         <p className='mt-3 font-light text-muted-foreground'>
-          I&#39;m an experienced Software Engineer based in Lahore, Pakistan.
-          I&#39;ve strong background in frontend, backend, devops and scaling of
-          multiple web applications.
+          I&#39;m a Senior Software Engineer based in Lahore, Pakistan, with a
+          strong background across frontend, backend, AI integration, and
+          scaling web applications.
         </p>
         <p className='mt-3 font-light text-muted-foreground'>
-          I currently work remotely as a Software Engineer at ZySoftec. My
-          previous experience is at Tintash. I&#39;ve three years of
-          professional experience and around one year of freelance work.
+          I currently lead a team of engineers at DevCache, owning architecture
+          and delivery across multiple client products. Before that I worked at
+          ZySoftec and Tintash. I have around four years of professional
+          experience plus freelance work.
         </p>
         <p className='mt-3 font-light text-muted-foreground'>
-          I&#39;m passionate about learning new technologies and building cool
-          stuff. I love working on NodeJs, NextJs and TypeScript.
+          I&#39;m passionate about building products and bringing AI into them.
+          I love working with Node.js, TypeScript, Next.js, and LLM/RAG systems.
         </p>
       </div>
       <div className='relative'>
