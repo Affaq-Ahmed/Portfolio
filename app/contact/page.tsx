@@ -4,10 +4,18 @@ import React from 'react';
 
 export const generateMetadata = (): Metadata => {
   return {
-    title: `Contact`,
+    title: 'Contact',
     description:
-      'This is the contact page of Affaq Ahmed for this portfolio website',
-    
+      'Get in touch with Affaq Ahmed, Senior Software Engineer (full-stack & AI). Available for projects, collaborations, and opportunities — send a message directly.',
+    alternates: { canonical: 'https://affaqahmed.com/contact' },
+    openGraph: {
+      title: 'Contact | Affaq Ahmed',
+      description:
+        'Get in touch with Affaq Ahmed — Senior Software Engineer (full-stack & AI).',
+      url: 'https://affaqahmed.com/contact',
+      type: 'website',
+      images: ['/og-image.png'],
+    },
   };
 };
 

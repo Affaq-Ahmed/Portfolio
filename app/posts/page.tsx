@@ -5,9 +5,18 @@ import React from 'react';
 
 export const generateMetadata = (): Metadata => {
   return {
-    title: `Posts`,
+    title: 'Posts',
     description:
-      'This is the posts page of Affaq Ahmed for this portfolio website',
+      'Writing by Affaq Ahmed, Senior Software Engineer — essays and reflections on the path into software engineering, from sports and college to building full-stack and AI products.',
+    alternates: { canonical: 'https://affaqahmed.com/posts' },
+    openGraph: {
+      title: 'Posts | Affaq Ahmed',
+      description:
+        'Essays and reflections by Affaq Ahmed on the journey into software engineering.',
+      url: 'https://affaqahmed.com/posts',
+      type: 'website',
+      images: ['/og-image.png'],
+    },
   };
 };
 
