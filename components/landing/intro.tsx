@@ -8,7 +8,7 @@ const Intro = () => {
       <div className='mt-2 flex-1 md:mt-0'>
         <h1 className='title no-underline'>Hey, I&#39;m Affaq.</h1>
         <p className='mt-3 font-light text-muted-foreground'>
-          I&#39;m an experienced Software Engineer based in Sargodha, Pakistan.
+          I&#39;m an experienced Software Engineer based in Lahore, Pakistan.
           I&#39;ve strong background in frontend, backend, devops and scaling of
           multiple web applications.
         </p>

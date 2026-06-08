@@ -14,13 +14,13 @@ export default function ResumeIntro() {
         <div className='flex w-full justify-between'>
           <div className='flex flex-col gap-1'>
             <p className='flex items-center gap-2 text-xs sm:gap-4 sm:text-sm'>
-              <FaLocationPin size={16} className='' /> From Sargodha, Pakistan
+              <FaLocationPin size={16} className='' /> From Lahore, Pakistan
             </p>
             <p className='flex items-center gap-2 text-sm sm:gap-4'>
               <FaEnvelope size={16} />{' '}
               <a
                 href='mailto:affaqahmed165@gmail.com'
-                className='text-xs font-medium underline hover:text-muted-foreground sm:text-sm'
+                className='hover:text-muted-foreground text-xs font-medium underline sm:text-sm'
               >
                 affaqahmed165@gmail.com
               </a>
@@ -28,7 +28,7 @@ export default function ResumeIntro() {
           </div>
 
           <div
-            className={`-mt-20 h-[100px] w-[100px] bg-[url('/images/resume/Affaq_Ahmed_DP_1w.png')] bg-cover bg-no-repeat transition-all duration-500 ease-out hover:bg-[url('/images/resume/Affaq_Ahmed_DP_2w.png')] dark:bg-[url('/images/resume/Affaq_Ahmed_DP_1b.png')] dark:hover:bg-[url('/images/resume/Affaq_Ahmed_DP_2b.png')] sm:-mt-2.5 sm:h-[150px] sm:w-[150px]`}
+            className={`-mt-20 h-[100px] w-[100px] bg-[url('/images/resume/Affaq_Ahmed_DP_1w.png')] bg-cover bg-no-repeat transition-all duration-500 ease-out hover:bg-[url('/images/resume/Affaq_Ahmed_DP_2w.png')] sm:-mt-2.5 sm:h-[150px] sm:w-[150px] dark:bg-[url('/images/resume/Affaq_Ahmed_DP_1b.png')] dark:hover:bg-[url('/images/resume/Affaq_Ahmed_DP_2b.png')]`}
           />
         </div>
       </div>
