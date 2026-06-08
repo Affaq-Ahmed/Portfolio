@@ -95,11 +95,35 @@ export default async function Post({
     url,
   };
 
+  const breadcrumbLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'Home',
+        item: 'https://affaqahmed.com',
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'Posts',
+        item: 'https://affaqahmed.com/posts',
+      },
+      { '@type': 'ListItem', position: 3, name: title, item: url },
+    ],
+  };
+
   return (
     <section className='pb-24 pt-32'>
       <script
         type='application/ld+json'
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type='application/ld+json'
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
       />
       <div className='container max-w-3xl'>
         <Link

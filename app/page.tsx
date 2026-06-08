@@ -3,6 +3,7 @@ import RecentPosts from '@/components/posts/recent-posts';
 import RecentProjects from '@/components/projects/recent-projects';
 import { Metadata } from 'next';
 import React from 'react';
+import { personSchema } from '@/lib/seo';
 
 export const metadata: Metadata = {
   title: 'Portfolio',
@@ -43,52 +44,6 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
-  const schema = {
-    '@context': 'https://schema.org',
-    '@type': 'Person',
-    name: 'Affaq Ahmed',
-    url: 'https://affaqahmed.com',
-    image: 'https://affaqahmed.com/og-image.png',
-    jobTitle: 'Senior Software Engineer',
-    description:
-      'Affaq Ahmed is a Senior Software Engineer specializing in full-stack development (Node.js, TypeScript, Next.js, React) and AI integration (RAG pipelines and multi-provider LLM integrations).',
-    knowsAbout: [
-      'Full-Stack Development',
-      'Node.js',
-      'TypeScript',
-      'Next.js',
-      'React',
-      'React Native',
-      'NestJS',
-      'MongoDB',
-      'PostgreSQL',
-      'AWS',
-      'RAG Pipelines',
-      'LLM Integration',
-      'Socket.IO',
-      'Stripe',
-    ],
-    hasOccupation: {
-      '@type': 'Occupation',
-      name: 'Senior Software Engineer',
-      occupationalCategory: '15-1252 Software Developers',
-    },
-    worksFor: { '@type': 'Organization', name: 'DevCache' },
-    alumniOf: {
-      '@type': 'CollegeOrUniversity',
-      name: 'National University of Computer and Emerging Sciences (FAST-NUCES)',
-    },
-    address: {
-      '@type': 'PostalAddress',
-      addressLocality: 'Lahore',
-      addressCountry: 'PK',
-    },
-    sameAs: [
-      'https://github.com/Affaq-Ahmed',
-      'https://linkedin.com/in/affaq-ahmed',
-    ],
-  };
-
   return (
     <section className='py-24'>
       <div className='container max-w-3xl'>
@@ -101,7 +56,7 @@ export default function Home() {
       {/* Schema for Google Rich Results */}
       <script
         type='application/ld+json'
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
       />
     </section>
   );
